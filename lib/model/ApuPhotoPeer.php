@@ -39,16 +39,7 @@ class ApuPhotoPeer extends BaseApuPhotoPeer {
         
     }
 
-    public static function retrieveFeaturedLinksPhotos($context="featured_links")
-    {
-        $criteria = new Criteria();
-        $criteria->add(self::CONTEXT,$context);
-        $criteria->add(self::IS_PRIMARY,self::PRIMARY);
-
-        return self::doSelect($criteria);
-    }
-
-
+    
     public static function retrieveRandomPhoto($excluded = array(),$limit=1)
     {
         $criteria = new Criteria();
@@ -95,24 +86,4 @@ class ApuPhotoPeer extends BaseApuPhotoPeer {
         return array('count' => $count, 'objects' => $objects);
     }
 
-    public static function retrieveAllIds($excluded =array())
-    {
-        $criteria = new Criteria();
-        $criteria->clearSelectColumns();
-        $criteria->addSelectColumn(ApuPhotoPeer::ID);
-
-        if(count($excluded)){
-            $criteria->add(self::CONTEXT,$excluded,Criteria::NOT_IN);
-        }
-
-        $stmt = self::doSelectStmt($criteria);
-
-        $results = array();
-        while($row = $stmt->fetch(PDO::FETCH_ASSOC))
-        {
-            $results[] = $row['ID'];            
-        } 
-
-        return $results;
-    }
 } // ApuPhotoPeer
