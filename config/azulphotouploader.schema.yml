@@ -1,0 +1,17 @@
+# propel:
+#   _attributes:
+#     package: plugins.AzulPhotoUploaderPlugin.lib.model
+#     defaultIdMethod: native
+
+#   apu_photo:
+#     _attributes: { phpName: ApuPhoto }
+#     id: { phpName: Id, type: INTEGER, size: '10', primaryKey: true, autoIncrement: true, required: true }
+#     context: { phpName: Context, type: VARCHAR, size: '45', required: true }
+#     context_id: { phpName: ContextId, type: INTEGER, size: '10', required: true }
+#     filename: { phpName: Filename, type: VARCHAR, size: '100', required: true }
+#     size: { phpName: Size, type: INTEGER, size: '11', required: false }
+#     is_primary: { phpName: IsPrimary, type: TINYINT, size: '3', required: true, defaultValue: '0' }
+#     title: { phpName: Title, type: VARCHAR, size: '100', required: false }
+#     title_link: { phpName: TitleLink, type: VARCHAR, size: '250', required: false }
+#     caption: { phpName: Caption, type: VARCHAR, size: '500', required: false }
+#     date_added: { phpName: DateAdded, type: TIMESTAMP, required: true }
