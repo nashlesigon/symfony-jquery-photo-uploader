@@ -30,15 +30,14 @@ How to use:
 		<?php use_stylesheet('/AzulPhotoUploaderPlugin/css/photouploader.css') ?>
 
 	2. Add the uploader to your template with this code:
-		$("#uploader").azulphotouploader({<br/>
-			context: your_image_context,<br/>
-			hasTitle: true, // default value is false<br/>
-			post_url: path_to_post_url<br/>
+		$("#uploader").azulphotouploader({
+			context: your_image_context, // replace with your defined context
+			hasTitle: true, // default value is false
+			post_url: path_to_post_url // replace with your post path
 		});
 	3. In the server side, use either of the following codes:
-
-		a. $result = ApUploaderApi::getInstance()->setFile($request->getFiles('image'))->saveImage();
-		b. $result = ApUploaderApi::getInstance()->saveImage();
+		a. $result = ApUploaderApi::getInstance()->saveImage();
+		b. $result = ApUploaderApi::getInstance()->setFile($request->getFiles('image'))->saveImage();
 
 Example:
 --------
@@ -49,15 +48,12 @@ Example:
 
 	<script type="text/javascript">
 		$("#uploader").azulphotouploader({
-			context: your_image_context,
+			context: "sample", // replace with your defined context
 			hasTitle: true, // default value is false
-			post_url: path_to_post_url
+			post_url: "/photo-upload/process" // replace with your post path
 		});
 
 	</script>
 
 	// And then on the server side:
-
-	$result = ApUploaderApi::getInstance()->setFile($request->getFiles('image'))->saveImage();
-	OR
 	$result = ApUploaderApi::getInstance()->saveImage();
