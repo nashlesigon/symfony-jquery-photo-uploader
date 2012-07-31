@@ -27,13 +27,11 @@ $result = ApUploaderApi::getInstance()->saveImage();
 
 
 Example:
-==========================
+--------
 
-<div id="uploader">
-
-// plugin will add the mark up here
-
-</div>
+	<div id="uploader">
+		// plugin will add the mark up here
+	</div>
 
 $("#uploader").azulphotouploader({<br/>
 	context: your_image_context,<br/>
