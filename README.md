@@ -4,8 +4,15 @@ Author: Nash Lesigon <br/>
 Email: nashlesigon@gmail.com <br/>
 Date Created: May 2012 <br/>
 Version: 1.0 Beta <br/>
+Compatibility: Symfony 1.4+
 
-============================
+Description:
+------------
+This plugin gives the ability to upload multiple photos with caption, title and target link using jQuery ajax request.
+
+Requirements:
+-------------
+	You must have image_trasform pear package installed. If you don't have it, you can download it <a href="http://pear.php.net/package/Image_Transform/redirected">here</a>.
 
 Install
 -------
