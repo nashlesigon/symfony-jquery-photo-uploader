@@ -3,7 +3,7 @@ AzulPhotoUploaderPlugin
 Author: Nash Lesigon <br/>
 Email: nashlesigon@gmail.com <br/>
 Date Created: May 2012 <br/>
-Version: 1.0 Beta <br/>
+Version: 1.0 <br/>
 Compatibility: Symfony 1.4+
 
 Description:
