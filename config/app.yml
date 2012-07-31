@@ -15,77 +15,9 @@ all:
           thumbnail:
             height: 150
             width: 150
-      Homepage:
-        sizes:
-          thumbnail:
-            height: 96
-            width: 290
-          cropped:
-            height: 330
-            width: 1000
-        scale:
-          height: 96
-          width: 290
-      Program:
-        sizes:
-          thumbnail:
-            height: 175
-            width: 235
           featured:
             height: 255
             width: 340
-      Itinerary:
-        sizes:
-          thumbnail:
-            height: 150
-            width: 150
-      Excursion_List:
-        sizes:
-          admin:
-            height: 274
-            width:  527
-          frontend:
-            height: 382
-            width: 630
-      Testimonial:
-        sizes:
-          thumbnail:
-            height: 75
-            width: 75
-      Accommodation:
-        sizes:
-          thumbnail:
-            height: 175
-            width: 235
-      Team_Member:
-        sizes:
-          thumbnail:
-            height: 200
-            width: 200
-      Featured_Links:
-        sizes:
-          frontend:
-            height: 274
-            width: 527
-          thumbnail:
-            height: 96
-            width: 290
-        scale:
-            height: 96
-            width: 290
-      Info_for_Participants:
-        sizes:
-          thumbnail:
-            height: 200
-            width: 200
-        scale:
-          height: 96
-          width: 290
-      About_Jakera:
-        sizes:
-          thumbnail:
-            height: 200
-            width: 200
         scale:
           height: 96
           width: 290
