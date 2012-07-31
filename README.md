@@ -12,7 +12,7 @@ This plugin gives the ability to upload multiple photos with caption, title and 
 
 Requirements:
 -------------
-	You must have image_trasform pear package installed. If you don't have it, you can download it <a href="http://pear.php.net/package/Image_Transform/redirected">here</a>.
+You must have image_trasform pear package installed. If you don't have it, you can download it <a href="http://pear.php.net/package/Image_Transform/redirected">here</a>.
 
 Install
 -------
