@@ -18,8 +18,9 @@ Install
 -------
 
 	1. Download package and place on the plugin directory
-	2. Enable plugin in the project configuration file
-	3. run the ./symfony plugin:publish-asset command
+	2. Import sql file: config/azulphotouploader.sql
+	3. Enable plugin in the project configuration file
+	4. run the ./symfony plugin:publish-asset command
 
 How to use:
 -----------
